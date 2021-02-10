@@ -11,6 +11,7 @@ import { AppareilService } from './services/appareil.service';
 import { AuthComponent } from './auth/auth.component';
 import { AppareilViewComponent } from './appareil-view/appareil-view.component';
 import { importExpr } from '@angular/compiler/src/output/output_ast';
+import { AuthService } from './services/auth.service';
 
 const appRoutes:Routes = [
   {path:'appareils', component: AppareilViewComponent},
@@ -35,7 +36,7 @@ const appRoutes:Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [AppareilService],
+  providers: [AppareilService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
