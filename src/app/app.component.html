@@ -1,13 +1,18 @@
-<nav class="navbar navbar-defaut">
+
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      <!-- en lieu et place de href, on utilise le routerLink pour éviter le rechargement de la page -->
-      <li routerLinkActive="active"><a routerLink="auth">Authentification</a></li>
-      <li routerLinkActive="active"><a routerLink="appareils">Appareils</a></li>
-      <li routerLinkActive="active"><a routerLink="edit">Nouvel appareil</a></li>
+      <li routerLinkActive="active"><a class="nav-link" routerLink="auth">Authentification</a></li>
+      <li routerLinkActive="active"><a class="nav-link" routerLink="appareils">Appareils</a></li>
+      <li routerLinkActive="active"><a class="nav-link" routerLink="edit">Nouvel appareil</a></li>
+      <li routerLinkActive="active"><a class="nav-link" routerLink="users">Utilisateurs</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li routerLinkActive="active">
+        <a (click)="onSignOut()" *ngIf="isAuth" style="cursor:pointer">Déconnexion</a>
+      </li>
     </ul>
   </div>
-  <div class="navbar-right">Vous êtes connecté depuis {{secondes}} secondes</div>
 </nav>
 
 <div class="container">
