@@ -60,7 +60,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
 ],
 
-  providers: [AppareilService, AuthService, AuthGuard,UserService],
+  providers: [AppareilService, AuthService, AuthGuard, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
