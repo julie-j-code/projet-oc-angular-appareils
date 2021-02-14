@@ -13,7 +13,7 @@ import { AppareilComponent } from './appareil/appareil.component';
 import { AppareilService } from './services/appareil.service';
 import { AuthComponent } from './auth/auth.component';
 import { AppareilViewComponent } from './appareil-view/appareil-view.component';
-import { importExpr } from '@angular/compiler/src/output/output_ast';
+// import { importExpr } from '@angular/compiler/src/output/output_ast';
 import { AuthService } from './services/auth.service';
 import { SingleAppareilComponent } from './single-appareil/single-appareil.component';
 import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
