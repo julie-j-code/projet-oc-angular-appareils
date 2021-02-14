@@ -57,7 +57,7 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' })
 ],
 
   providers: [AppareilService, AuthService, AuthGuard, UserService],
