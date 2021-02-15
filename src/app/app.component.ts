@@ -4,9 +4,9 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 // import { FormsModule } from '@angular/forms';
 // import { AppareilService } from './services/appareil.service';
 import { AuthService } from './services/auth.service';
-import { Observable } from "rxjs/observable";
+import { Observable } from "rxjs";
 import 'rxjs/Rx';
-import { Subscription } from 'rxjs/subscription';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
