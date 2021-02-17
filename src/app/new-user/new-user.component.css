@@ -1,0 +1,10 @@
+.btn{
+    border: 0;
+    margin: 1% 0;
+}
+
+.btn:hover{
+    background-color: green;
+    transition: all 0.3s ease-in-out ;
+    color: white;
+}

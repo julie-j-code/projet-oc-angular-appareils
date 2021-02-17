@@ -14,20 +14,21 @@
         <input type="text" class="form-control" id="email" formControlName="email">
       </div>
       <div class="form-group">
-        <label for="drinkPreference">Quelle boisson préférez-vous?</label>
+        <label for="drinkPreference">Quel fournisseur préférez-vous?</label>
         <select class="form-control" id="drinkPreference" formControlName="drinkPreference">
-          <option value="Coca">Cocal-Cola</option>
-          <option value="Pepsi">Pepsi</option>
+          <option value="Butagaz">Butagaz</option>
+          <option value="Total">Direct NRG</option>
+          <option value="Engie">Engie</option>
         </select>
       </div>
       <div formArrayName="hobbies">
-        <h3>Vos hobbies</h3>
+        <h3>Profession</h3>
         <div class="form-group" *ngFor="let hobbyControl of getHobbies().controls; let i = index">
           <input type="text" class="form-control" [formControlName]=i>
         </div>
-        <button type="button" class="btn btn-success" (click)="onAddHobby()">Ajouter un hobby</button>
+        <button type="button" class="btn btn-success d-block mb-4" (click)="onAddHobby()">Ajouter une profession</button>
       </div>
-      <button class="btn btn-primary" type="submit" [disabled]="userForm.invalid">Soumettre</button>
+      <button class="btn btn-primary d-block mb-4" type="submit" [disabled]="userForm.invalid">Soumettre</button>
 
     </form>
   </div> 
